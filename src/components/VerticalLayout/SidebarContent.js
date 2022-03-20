@@ -98,6 +98,119 @@ const SidebarContent = props => {
               </ul>
             </li>
 
+
+
+            <li>
+              <Link to="/#" className="waves-effect">
+                <i className="mdi mdi-calendar-text"></i><span className="badge rounded-pill bg-info float-end">3</span>
+                <span>{props.t("Appointments")}</span>
+              </Link>
+              <ul className="sub-menu">
+                <li><Link to="/adddoctor">{props.t("Add New Appointment")}</Link></li>
+                <li><Link to="/dashboard2">{props.t("Today's Appointments")}</Link></li>
+                <li><Link to="/dashboard2">{props.t("Cancel Appointment")}</Link></li>
+              </ul>
+            </li>
+
+            <li>
+              <Link to="/#" className="waves-effect">
+                <i className="mdi mdi-account-circle-outline"></i><span className="badge rounded-pill bg-info float-end">3</span>
+                <span>{props.t("Patients")}</span>
+              </Link>
+              <ul className="sub-menu">
+                <li><Link to="/adddoctor">{props.t("Admit Patient")}</Link></li>
+                <li><Link to="/dashboard2">{props.t("Register New Patient")}</Link></li>
+                <li><Link to="/dashboard2">{props.t("Discharge Patient")}</Link></li>
+
+              </ul>
+            </li>
+
+            <li className="menu-title">{props.t("Hospital Staff")}</li>
+
+            <li>
+              <Link to="/#" className="waves-effect">
+                <i className="mdi mdi-doctor"></i><span className="badge rounded-pill bg-info float-end">4</span>
+                <span>{props.t("Doctors")}</span>
+              </Link>
+              <ul className="sub-menu">
+                <li><Link to="/adddoctor">{props.t("Add Doctor")}</Link></li>
+                <li><Link to="/dashboard2">{props.t("Remove Doctor")}</Link></li>
+                <li><Link to="/dashboard2">{props.t("View Doctors")}</Link></li>
+                <li><Link to="/dashboard2">{props.t("Update Doctor Info")}</Link></li>
+              </ul>
+            </li>
+
+
+            <li>
+              <Link to="/#" className="waves-effect">
+                <i className="mdi mdi-hospital-box-outline"></i><span className="badge rounded-pill bg-info float-end">3</span>
+                <span>{props.t("Nurses")}</span>
+              </Link>
+              <ul className="sub-menu">
+                <li><Link to="/adddoctor">{props.t("Add Nurse")}</Link></li>
+                <li><Link to="/adddoctor">{props.t("View Nurse Info")}</Link></li>
+              </ul>
+            </li>
+
+
+
+            <li className="menu-title">{props.t("Blood Bank")}</li>
+            <li>
+              <Link to="/#" className="waves-effect">
+                <i className="mdi mdi-blood-bag"></i><span className="badge rounded-pill bg-info float-end"></span>
+                <span>{props.t("Blood Requests")}</span>
+              </Link>
+              <ul className="sub-menu">
+                <li><Link to="/adddoctor">{props.t("Add New Request")}</Link></li>
+              </ul>
+            </li>
+
+
+
+
+
+            <li className="menu-title">{props.t("Laboratory")}</li>
+            <li>
+              <Link to="/#" className="waves-effect">
+                <i className="dripicons-medical"></i><span className="badge rounded-pill bg-info float-end">2</span>
+                <span>{props.t("Lab Tests")}</span>
+              </Link>
+              <ul className="sub-menu">
+                <li><Link to="/adddoctor">{props.t("X Ray")}</Link></li>
+                <li><Link to="/adddoctor">{props.t("MRI")}</Link></li>
+              </ul>
+            </li>
+
+            <li className="menu-title">{props.t("Settings")}</li>
+
+            <li>
+              <Link to="/profile" className=" waves-effect">
+                <i className="mdi mdi-face-outline"></i>
+                <span>{props.t("My Profile")}</span>
+              </Link>
+            </li>
+
+
+            <li>
+              <Link to="/logout" className=" waves-effect">
+                <i className="mdi mdi-logout"></i>
+                <span>{props.t("Log Out")}</span>
+              </Link>
+            </li>
+           
+
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+
+          {/* ----------------------------------------------------------*/}
+          {/* ----------------------------------------------------------*/}
+          {/* ----------------------------------------------------------*/}
+          {/* ----------------------------------------------------------*/}
+
+
+
             <li>
               <Link to="/calendar" className=" waves-effect">
                 <i className="mdi mdi-calendar-text"></i>
@@ -184,7 +297,7 @@ const SidebarContent = props => {
               </ul>
             </li>
 
-            <li className="menu-title">{props.t("Components")}</li>
+          <li className="menu-title">{props.t("Theme Providers")}</li>
 
             <li>
               <Link to="/#" className="has-arrow waves-effect">
@@ -410,7 +523,10 @@ const SidebarContent = props => {
                 </li>
               </ul>
             </li>
+
           </ul>
+
+
         </div>
       </SimpleBar>
     </React.Fragment>

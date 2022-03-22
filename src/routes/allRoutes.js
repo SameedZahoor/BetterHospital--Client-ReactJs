@@ -109,14 +109,18 @@ import UserProfile from "../pages/Authentication/user-profile"
 
 // Custom Defined Pages @BetterHospital
 import AddDoctor from '../pages/AddDoctor';
+import RemoveDoctor from '../pages/RemoveDoctor';
+import ViewDoctor from '../pages/ViewDoctor';
 
 
 
 
 const userRoutes = [
 
-
+  
   { path: "/adddoctor", component: AddDoctor },
+  { path: "/removedoctor", component: RemoveDoctor },
+  { path: "/viewdoctor", component: ViewDoctor },
 
 
   { path: "/dashboard", component: Dashboard },

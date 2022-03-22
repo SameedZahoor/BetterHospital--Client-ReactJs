@@ -147,8 +147,9 @@ const SidebarContent = props => {
                 <span>{props.t("Nurses")}</span>
               </Link>
               <ul className="sub-menu">
-                <li><Link to="/adddoctor">{props.t("Add Nurse")}</Link></li>
-                <li><Link to="/adddoctor">{props.t("View Nurse Info")}</Link></li>
+                <li><Link to="/addnewnurse">{props.t("Add Nurse")}</Link></li>
+                <li><Link to="/removenurse">{props.t("Remove Nurse")}</Link></li>
+                <li><Link to="/viewnurseinfo">{props.t("View Nurse Info")}</Link></li>
               </ul>
             </li>
 
@@ -161,7 +162,7 @@ const SidebarContent = props => {
                 <span>{props.t("Blood Requests")}</span>
               </Link>
               <ul className="sub-menu">
-                <li><Link to="/adddoctor">{props.t("Add New Request")}</Link></li>
+                <li><Link to="/addbloodrequest">{props.t("Add New Request")}</Link></li>
               </ul>
             </li>
 

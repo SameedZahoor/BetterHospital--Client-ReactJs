@@ -111,8 +111,9 @@ import UserProfile from "../pages/Authentication/user-profile"
 import AddDoctor from '../pages/AddDoctor';
 import RemoveDoctor from '../pages/RemoveDoctor';
 import ViewDoctor from '../pages/ViewDoctor';
-
-
+import AddBloodRequest from "../pages/AddBloodRequest";
+import AddNewNurse from '../pages/AddNewNurse';
+import RemoveNurse from '../pages/RemoveNurse';
 
 
 const userRoutes = [
@@ -121,7 +122,9 @@ const userRoutes = [
   { path: "/adddoctor", component: AddDoctor },
   { path: "/removedoctor", component: RemoveDoctor },
   { path: "/viewdoctor", component: ViewDoctor },
-
+  { path: "/addbloodrequest", component: AddBloodRequest },
+  { path: "/addnewnurse", component: AddNewNurse },
+  { path: "/removenurse", component: RemoveNurse },
 
   { path: "/dashboard", component: Dashboard },
   { path : '/dashboard2' , component : Dashboard2},

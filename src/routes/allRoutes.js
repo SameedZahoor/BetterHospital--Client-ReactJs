@@ -114,7 +114,12 @@ import ViewDoctor from '../pages/ViewDoctor';
 import AddBloodRequest from "../pages/AddBloodRequest";
 import AddNewNurse from '../pages/AddNewNurse';
 import RemoveNurse from '../pages/RemoveNurse';
-
+import AddAppointment from '../pages/AddAppointment';
+import CancelAppointment from '../pages/CancelAppointment';
+import AddRoom from '../pages/AddRoom';
+import AddPatient from '../pages/AddPatient';
+import AdmitPatient from '../pages/AdmitPatient';
+import DischargePatient from '../pages/DischargePatient';
 
 const userRoutes = [
 
@@ -125,6 +130,13 @@ const userRoutes = [
   { path: "/addbloodrequest", component: AddBloodRequest },
   { path: "/addnewnurse", component: AddNewNurse },
   { path: "/removenurse", component: RemoveNurse },
+  { path: "/addnewappointment", component:AddAppointment },
+  { path: "/cancelappointment", component:CancelAppointment },
+  { path: "/addnewroom", component: AddRoom },
+  { path: "/addnewpatient", component: AddPatient },
+  { path: "/admitpatient", component: AdmitPatient },
+  { path: "/dischargepatient", component: DischargePatient },
+
 
   { path: "/dashboard", component: Dashboard },
   { path : '/dashboard2' , component : Dashboard2},

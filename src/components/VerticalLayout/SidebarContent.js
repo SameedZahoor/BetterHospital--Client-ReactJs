@@ -106,9 +106,9 @@ const SidebarContent = props => {
                 <span>{props.t("Appointments")}</span>
               </Link>
               <ul className="sub-menu">
-                <li><Link to="/adddoctor">{props.t("Add New Appointment")}</Link></li>
+                <li><Link to="/addnewappointment">{props.t("Add New Appointment")}</Link></li>
                 <li><Link to="/dashboard2">{props.t("Today's Appointments")}</Link></li>
-                <li><Link to="/dashboard2">{props.t("Cancel Appointment")}</Link></li>
+                <li><Link to="/cancelappointment">{props.t("Cancel Appointment")}</Link></li>
               </ul>
             </li>
 
@@ -118,12 +118,26 @@ const SidebarContent = props => {
                 <span>{props.t("Patients")}</span>
               </Link>
               <ul className="sub-menu">
-                <li><Link to="/adddoctor">{props.t("Admit Patient")}</Link></li>
-                <li><Link to="/dashboard2">{props.t("Register New Patient")}</Link></li>
-                <li><Link to="/dashboard2">{props.t("Discharge Patient")}</Link></li>
+                <li><Link to="/admitpatient">{props.t("Admit Patient")}</Link></li>
+                <li><Link to="/addnewpatient">{props.t("Register New Patient")}</Link></li>
+                <li><Link to="/dischargepatient">{props.t("Discharge Patient")}</Link></li>
 
               </ul>
             </li>
+
+
+            <li>
+              <Link to="/#" className="waves-effect">
+                <i className="mdi mdi-home-import-outline"></i><span className="badge rounded-pill bg-info float-end">3</span>
+                <span>{props.t("Rooms")}</span>
+              </Link>
+              <ul className="sub-menu">
+                <li><Link to="/addnewroom">{props.t("Add Room")}</Link></li>
+                <li><Link to="/admitpatient">{props.t("Allot Room to Patient")}</Link></li>
+                
+              </ul>
+            </li>
+
 
             <li className="menu-title">{props.t("Hospital Staff")}</li>
 

@@ -4,7 +4,8 @@ import App from "./App"
 import * as serviceWorker from "./serviceWorker"
 import { BrowserRouter } from "react-router-dom"
 import { Provider } from "react-redux"
-
+import PatientLogin from '../src/pages/PatientViews/login';
+import LandingPage  from "./pages/LandingPage"
 import store from "./store"
 
 const app = (

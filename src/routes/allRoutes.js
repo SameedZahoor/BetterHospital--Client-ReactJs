@@ -120,6 +120,22 @@ import AddRoom from '../pages/AddRoom';
 import AddPatient from '../pages/AddPatient';
 import AdmitPatient from '../pages/AdmitPatient';
 import DischargePatient from '../pages/DischargePatient';
+import AddRadiologyRequest from '../pages/AddRadiologyRequest';
+
+
+// @ Patient Views
+import PatientLogin from '../pages/PatientViews/login'
+
+const patientRoutes = [
+  { path: "/adddoctor", component: AddDoctor },
+  { path:"/login", component: PatientLogin },
+  { path: "/dashboard", component: Dashboard },
+
+
+  { path: "/", exact: true, component: () => <Redirect to="/dashboard" /> },
+]
+
+
 
 const userRoutes = [
 
@@ -136,7 +152,8 @@ const userRoutes = [
   { path: "/addnewpatient", component: AddPatient },
   { path: "/admitpatient", component: AdmitPatient },
   { path: "/dischargepatient", component: DischargePatient },
-
+  { path: "/radiology", component: AddRadiologyRequest },
+   
 
   { path: "/dashboard", component: Dashboard },
   { path : '/dashboard2' , component : Dashboard2},
@@ -235,6 +252,7 @@ const authRoutes = [
 
   { path: "/logout", component: Logout },
   { path: "/login", component: Login },
+  { path: "/patient/login", component: PatientLogin },
   { path: "/forgot-password", component: ForgetPwd },
   { path: "/register", component: Register },
   
@@ -250,4 +268,4 @@ const authRoutes = [
     { path: "/auth-lock-screen", component: LockScreen },
 ]
 
-export { userRoutes, authRoutes }
+export { userRoutes, authRoutes , patientRoutes }

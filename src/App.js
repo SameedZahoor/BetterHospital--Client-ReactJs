@@ -5,7 +5,7 @@ import { Switch, BrowserRouter as Router } from "react-router-dom"
 import { connect } from "react-redux"
 
 // Import Routes all
-import { userRoutes, authRoutes } from "./routes/allRoutes"
+import { userRoutes, authRoutes, patientRoutes } from "./routes/allRoutes"
 
 // Import all middleware
 import Authmiddleware from "./routes/middleware/Authmiddleware"
@@ -62,6 +62,19 @@ const App = props => {
               exact
             />
           ))}
+
+              //patientRoutes
+          {/* {patientRoutes.map((route, idx) => (
+            <Authmiddleware
+              path={route.path}
+              layout={Layout}
+              component={route.component}
+              key={idx}
+              isAuthProtected={true}
+              exact
+            />
+          ))} */}
+
         </Switch>
 
       </Router>

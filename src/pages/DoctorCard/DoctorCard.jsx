@@ -37,6 +37,7 @@ const DoctorCard = ({ props }) => {
       <Col mg={12} lg={6}>
         <Card>
           <center>
+          
             {" "}
             <div className="mt-4 mt-md-0">
               <img className="rounded me-2" alt="" width="200" src={img2} />

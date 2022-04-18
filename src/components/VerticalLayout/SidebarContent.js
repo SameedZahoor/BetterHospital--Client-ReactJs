@@ -169,32 +169,22 @@ const SidebarContent = props => {
 
 
 
-            <li className="menu-title">{props.t("Blood Bank")}</li>
+            <li className="menu-title">{props.t("Others")}</li>
+
             <li>
-              <Link to="/#" className="waves-effect">
-                <i className="mdi mdi-blood-bag"></i><span className="badge rounded-pill bg-info float-end"></span>
-                <span>{props.t("Blood Requests")}</span>
+              <Link to="/addbloodrequest" className=" waves-effect">
+                <i className="mdi mdi-blood-bag"></i>
+                <span>{props.t("Blood Request")}</span>
               </Link>
-              <ul className="sub-menu">
-                <li><Link to="/addbloodrequest">{props.t("Add New Request")}</Link></li>
-              </ul>
+            </li>
+            
+            <li>
+              <Link to="/radiology" className=" waves-effect">
+                <i className="dripicons-medical"></i>
+                <span>{props.t("Radiology")}</span>
+              </Link>
             </li>
 
-
-
-
-
-            <li className="menu-title">{props.t("Laboratory")}</li>
-            <li>
-              <Link to="/#" className="waves-effect">
-                <i className="dripicons-medical"></i><span className="badge rounded-pill bg-info float-end">2</span>
-                <span>{props.t("Lab Tests")}</span>
-              </Link>
-              <ul className="sub-menu">
-                <li><Link to="/adddoctor">{props.t("X Ray")}</Link></li>
-                <li><Link to="/adddoctor">{props.t("MRI")}</Link></li>
-              </ul>
-            </li>
 
             <li className="menu-title">{props.t("Settings")}</li>
 
